@@ -24,6 +24,10 @@ public class DisplayMonth {
 //		default:
 //			break;
 //		}
+		
+		
+		
+		
 		try {
 			System.out.println(MONTH[scanner.nextInt()]);
 		} catch (Exception e) {

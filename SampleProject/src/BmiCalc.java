@@ -9,6 +9,8 @@ public class BmiCalc {
 		bmi = weight / (height * 2);
 		System.out.println(bmi);
 
+		
+		
 	}
 
 }

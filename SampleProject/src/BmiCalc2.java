@@ -7,11 +7,12 @@ public class BmiCalc2 {
 //		weight = 57;
 //		height = 162;
 		
-		Scanner stdIn = new Scanner(System.in);
-		System.out.println("身長は :");
-		height = stdIn.nextDouble();
-		System.out.println("体重は :");
-		weight = stdIn.nextDouble();
+		try (Scanner stdIn = new Scanner(System.in)) {
+			System.out.println("身長は :");
+			height = stdIn.nextDouble();
+			System.out.println("体重は :");
+			weight = stdIn.nextDouble();
+		}
 		height /= 100;
 		bmi = weight / (height * 2);
 		System.out.println(bmi);
@@ -23,6 +24,7 @@ public class BmiCalc2 {
 			System.out.println("肥満です");
 		}
 
+		
 	}
 
 }
